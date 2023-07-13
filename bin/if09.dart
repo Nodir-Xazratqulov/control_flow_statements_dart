@@ -10,4 +10,18 @@
     Returns:
         boolean: True if the resulting number is less than or equal to the old number, otherwise return False. */
 
-void main() {}
+
+func(int a){
+    int b = a%10;
+    int c = a~/10;
+    int d = b*10+c;
+    if(d<=a){
+        return true;
+    }
+    if(d>a){
+        return false;
+    }
+}
+void main() {
+    print(func(12));
+}
