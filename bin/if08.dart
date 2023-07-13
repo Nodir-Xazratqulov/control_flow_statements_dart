@@ -11,4 +11,22 @@
     Returns:
         string: the message to print */
 
-void main() {}
+
+func(int a){
+    double x = a/10;
+    if(x<10 && a%2==1){
+        return 'ikki xonali toq son';
+    }
+    if(x<10 && a%2==0){ 
+        return 'ikki xonali juft son';
+    }
+    if(x>10 && a%2==1) {
+        return 'uch xonali toq son';
+    }
+    if(x>10 && a%2==0){
+        return 'uch xonali juft son';
+    }
+}
+void main() {
+    print(func(32));
+}
