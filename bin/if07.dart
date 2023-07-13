@@ -11,4 +11,29 @@
         a: integer
     Returns:
         string: the message to print */
-void main() {}
+
+
+
+func(int a){
+
+    if(a>0 && a%2==1){
+        return 'musbat toq raqam';
+    }
+    if(a>0 && a%2==0){ 
+        return 'musbat juft raqam';
+    }
+    if(a<0 && a%2==1) {
+        return 'manfiy toq raqam';
+    }
+    if(a<0 && a%2==0){
+        return 'manfiy juft raqam';
+    }
+    if(a==0){
+        return 0;
+    }
+    
+}
+void main() {
+    print(func(8));
+}
+
