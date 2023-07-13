@@ -13,4 +13,28 @@
     Returns:
         string: the message to return*/
 
-void main() {}
+
+func(int temp){
+    if(temp<0){
+        return 'Muzlamoqda';
+    }
+    if(temp>=1 && temp<=10){
+        return 'Juda sovuq';
+    }
+    if(temp>=11 && temp<=20){
+        return 'Sovuq';
+    }
+    if(temp>=21 && temp<=30){
+        return 'Oddiy';
+    }
+    if(temp>=31 && temp<=40){
+        return 'Issiq';
+    }
+    if(temp>40){
+        return 'Juda issiq';
+    }
+}
+
+void main() {
+    print(func(25));
+}
